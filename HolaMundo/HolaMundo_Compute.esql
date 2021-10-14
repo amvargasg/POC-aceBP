@@ -1,0 +1,14 @@
+
+
+CREATE COMPUTE MODULE HolaMundo_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		 CALL CopyEntireMessage();
+		 SET OutputRoot.XMLNSC.Data = 'Hola Mundo';
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
