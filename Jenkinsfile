@@ -1,5 +1,5 @@
 def templateName = 'poc-acebp'
-def repoUrl = "https://github.ibm.com/angela-v/POC-AceBP.git"
+def repoUrl = "https://github.com/amvargasg/POC-aceBP.git"
 
 pipeline {
     
